@@ -134,6 +134,12 @@ h1.heading-date {
   padding: 1em;
   white-space: nowrap;
 }
+@media (max-width:641px)  {
+  .family th,
+  .family td {
+    padding: 0.5em;
+  }
+}
 .family .name {
   font-weight: bold;
 }
@@ -277,7 +283,7 @@ h1.heading-date {
 .money-explanation-text {
   border: 1px solid var(--border-colour);
   border-radius: 0.25em;
-  padding: 2em;
+  padding: 2em 1em 1em;
 }
 
 .gallery-link {
