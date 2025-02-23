@@ -1,0 +1,289 @@
+/* Global */
+:root {
+  --background-colour: rgb(255, 251, 239);
+  --text-color: rgb(119, 102, 85);
+  --border-colour: rgb(233, 217, 191);
+}
+
+body {
+  font-family: 'GowunBatang-Regular', 'Roboto', sans-serif;
+  color: var(--text-color);
+  text-align: center;
+  background: var(--background-colour);
+}
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+p,
+ul {
+  line-height: 2em;
+}
+.h1 {
+  font-size: 4em;
+}
+
+.circle {
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+.circle img {
+  border-radius: 50%;
+  display: block;
+  border: 1px solid #ffffff;
+}
+.circle:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 251, 239, 0) 0%,
+    rgba(255, 251, 239, 1) 70%,
+    rgba(255, 251, 239, 1) 100%
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: 0; left: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+/* Google Map */
+#g-mapdisplay img {
+  max-height: none;
+  max-width: none !important;
+  background: none !important;
+}
+
+/* Header */
+h1.heading-date {
+  font-size: 4em;
+}
+.heading {
+  margin: 10px;
+  font-size: 2em;
+  text-align: center;
+}
+.heading p {
+  font-size: 0.75em;
+  font-family: cursive;
+}
+.divider-heart {
+  margin: 10px;
+}
+
+/* Main */
+.main-image {
+  width: 400px;
+}
+@media (min-width:641px)  {
+  .main-image {
+    width: 500px;
+  }
+}
+@media (min-width:1025px) {
+  .main-image {
+    width: 800px;
+  }
+}
+@media (min-width:1281px)  {
+  .main-image {
+    width: 900px;
+  }
+}
+
+.section {
+  margin-top: 5em;
+  justify-items: center;
+}
+
+.summary p,
+.message p {
+  padding: 10px 0;
+}
+
+.flower:after {
+  content: "\1F490";
+  font-size: 1.5em;
+}
+
+.celebration {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.family {
+  border-top: 1px solid var(--border-colour);
+  border-bottom: 1px solid var(--border-colour);
+}
+.family th,
+.family td {
+  padding: 1em;
+  white-space: nowrap;
+}
+.family .name {
+  font-weight: bold;
+}
+
+.date-time .date-time-text {
+  justify-self: left;
+  text-align: left;
+  font-size: 1.5em;
+}
+.date-time .date-time-text,
+.date-time p {
+  padding-left: 2em;
+}
+.calendar {
+  margin: 10px;
+}
+.calendar th,
+.calendar td {
+  padding: 1.5em;
+  text-align: center;
+}
+@media (max-width:641px)  {
+  .calendar th,
+  .calendar td {
+    padding: 1em;
+  }
+}
+.calendar .d-day {
+  background-color: #998877;
+  color: #ffffff;
+  border-radius: 50%;
+}
+.timetable {
+  margin-top: 2em;
+  border-top: 1px solid var(--border-colour);
+}
+.timetable th,
+.timetable td {
+  padding: 1em 2em;
+}
+.timetable tr {
+  border-bottom: 1px solid var(--border-colour);
+}
+.countdown {
+  margin-top: 1em;
+}
+
+.info-header {
+  font-size: 2em;
+  font-family: cursive;
+  margin-top: 2em;
+}
+
+.handus-header {
+  border: 1px solid var(--border-colour);
+  padding: 2em 10%;
+  position: relative;
+}
+.handus-header:before {
+  background: none;
+  border: 1px solid var(--border-colour);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+}
+
+.map {
+  overflow: hidden;
+  max-width: 100%;
+  width: 500px;
+  height: 500px;
+}
+.map #g-mapdisplay {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.handus-map {
+  margin-top: 1em;
+}
+.handus-map img {
+  min-width: 360px;
+  width: 50%;
+}
+
+.access {
+  margin: 2em auto 0;
+  text-align: left;
+}
+.access-item {
+  display: flex;
+}
+.access .icon {
+  height: 1em;
+  align-self: center;
+  border-radius: 50%;
+  background: var(--border-colour);
+  padding: 1em;
+}
+.access .icon img {
+  width: 1em;
+}
+.access-title {
+  font-size: 1.25em;
+  margin-top: 1em;
+}
+.access-directions {
+  margin-top: 0.5em;
+}
+.access-directions li:first-child {
+  list-style: "";
+  margin-left: 0.5em;
+}
+.access-directions li {
+  list-style: "→";
+  margin-left: 1.5em;
+}
+
+.parking-explanation,
+.money-explanation {
+  text-align: left;
+  margin: 2em auto;
+}
+.parking-explanation-title,
+.money-explanation-title {
+  background-color: var(--border-colour);
+  color: var(--text-colour);
+  text-align: center;
+  margin: 0 20% 0;
+  position: relative;
+  padding: 0.5em;
+  top: 1.5em;
+  border-radius: 1em;
+}
+.parking-explanation-text,
+.money-explanation-text {
+  border: 1px solid var(--border-colour);
+  border-radius: 0.25em;
+  padding: 2em;
+}
+
+.gallery-link {
+  text-decoration: none;
+  color: var(--text-color);
+  border: 1px solid var(--border-colour);
+  border-radius: 0.25em;
+  padding: 0 5em;
+}
