@@ -292,6 +292,15 @@ h1.heading-date {
   }
 }
 
-a.gallery-link {
+a.gallery-link,
+a.gallery-link:active,
+a.gallery-link:focus,
+a.gallery-link:hover,
+a.gallery-link:link,
+a.gallery-link:visited {
   text-decoration: none;
-  co
+  color: var(--text-color);
+  border: 1px solid var(--border-colour);
+  border-radius: 0.25em;
+  padding: 0 5em;
+}
